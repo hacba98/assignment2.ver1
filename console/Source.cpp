@@ -1,9 +1,10 @@
 #include "Console.h"
+#include "Account.h"
 
 using namespace std;
 
 int main() {
-	Menu();
-	system("PAUSE");
+	Account Acc;
+	Homepage(Acc);
 	return 0;
 }
