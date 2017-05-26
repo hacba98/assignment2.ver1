@@ -19,7 +19,7 @@ bool checkPassword(QString pass) {// check if password have the valid type, cont
 	return result;
 }
 
-// Function in register
+// Function in REGISTER
 bool checkValidPhone(QString phonenumber) {
 	bool result = true;
 	// YOUR CODE GO HERE
@@ -33,4 +33,19 @@ void registToDB(QString user, QString pass, QString phone) {
 
 	////////////////////
 	return;
+}
+
+// Function in RESET PASSWORD
+bool phoneCorrect(QString username, QString phone) { // function check if the phone number is match with username's phone number. If match return 1
+	bool result = true;
+	// YOUR CODE GO HERE
+
+	////////////////////
+	return result;
+}
+
+QString resetPassword(QString username) { // void fucntion use to set a new password to username, return new password 
+	QString newpass;
+
+	return newpass;
 }

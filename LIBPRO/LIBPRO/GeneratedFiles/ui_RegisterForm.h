@@ -141,6 +141,7 @@ public:
 
         checkBoxAccept = new QCheckBox(layoutWidget);
         checkBoxAccept->setObjectName(QStringLiteral("checkBoxAccept"));
+        checkBoxAccept->setTristate(false);
 
         verticalLayout->addWidget(checkBoxAccept);
 
@@ -170,6 +171,7 @@ public:
         retranslateUi(Register);
         QObject::connect(confirmButton, SIGNAL(clicked()), Register, SLOT(accept()));
         QObject::connect(cancelButton, SIGNAL(clicked()), Register, SLOT(reject()));
+        QObject::connect(checkBoxAccept, SIGNAL(toggled(bool)), confirmButton, SLOT(setEnabled(bool)));
 
         QMetaObject::connectSlotsByName(Register);
     } // setupUi

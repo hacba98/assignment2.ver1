@@ -122,6 +122,9 @@
       <property name="text">
        <string>I have read and accepted the terms and conditions</string>
       </property>
+      <property name="tristate">
+       <bool>false</bool>
+      </property>
      </widget>
     </item>
     <item>
@@ -209,6 +212,22 @@
     <hint type="destinationlabel">
      <x>179</x>
      <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxAccept</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>confirmButton</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>316</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>165</x>
+     <y>353</y>
     </hint>
    </hints>
   </connection>

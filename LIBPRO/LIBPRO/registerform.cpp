@@ -1,6 +1,7 @@
 #include "registerform.h"
 #include "ui_RegisterForm.h"
 #include <qmessagebox.h>
+#include <qcheckbox.h>
 #include "Features.h"
 
 
@@ -10,12 +11,8 @@ RegisterForm::RegisterForm(QWidget *parent) :
 	ui.setupUi(this);
 
 	//Create connect
-	QObject::connect(ui.checkBoxAccept, SIGNAL(stateChanged(0)), ui.confirmButton, SLOT(enableOK()));
+	QObject::connect(ui.checkBoxAccept, SIGNAL(toggled(bool)), ui.confirmButton, SLOT(setEnabled(bool)));
 	QObject::connect(ui.confirmButton, SIGNAL(clicked()), this, SLOT(checkRegister()));
-}
-
-void RegisterForm::enableOK() {
-	ui.confirmButton->setEnabled(true);
 }
 
 void RegisterForm::checkRegister() { // fucntion respond whenever the OK button in register screen is clicked

@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="LIBPRO">
+    <file>search_icon.png</file>
+    <file>usermenu_background.jpg</file>
+    <file>Library-gallery-6.jpg</file>
     <file>usermenu.jpg</file>
     <file>menu.jpg</file>
     <file>icon.png</file>

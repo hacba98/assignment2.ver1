@@ -16,7 +16,6 @@ public:
 
 public slots:
 void checkRegister();
-void enableOK();
 
 private:
 	Ui::Register ui;
