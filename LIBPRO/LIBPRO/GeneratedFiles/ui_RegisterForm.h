@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'RegisterForm.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.0
+** Created by: Qt User Interface Compiler version 5.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -141,7 +141,6 @@ public:
 
         checkBoxAccept = new QCheckBox(layoutWidget);
         checkBoxAccept->setObjectName(QStringLiteral("checkBoxAccept"));
-        checkBoxAccept->setTristate(false);
 
         verticalLayout->addWidget(checkBoxAccept);
 
@@ -171,7 +170,6 @@ public:
         retranslateUi(Register);
         QObject::connect(confirmButton, SIGNAL(clicked()), Register, SLOT(accept()));
         QObject::connect(cancelButton, SIGNAL(clicked()), Register, SLOT(reject()));
-        QObject::connect(checkBoxAccept, SIGNAL(toggled(bool)), confirmButton, SLOT(setEnabled(bool)));
 
         QMetaObject::connectSlotsByName(Register);
     } // setupUi
