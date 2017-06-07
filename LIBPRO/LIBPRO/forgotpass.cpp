@@ -10,10 +10,11 @@ ForgotPass::ForgotPass(QWidget *parent)
 void ForgotPass::on_resetButton_clicked() {
 	QString user = ui.lineUser->text();
 	QString phone = ui.linePhone->text();
-	if (checkUser(user) && phoneCorrect(user, phone)) {
-		QString newpass = resetPassword(user);
-		QMessageBox::information(this, "Reset Password Success", "Your password have been changed to: " + newpass);
+	QString pass = "admin";
+	if (resetPassword(user, phone, pass)) {
+		QMessageBox::information(this, "Reset Password Successfully", "Your new password is ""admin"". Please change it in profile");
 	}
+	else QMessageBox::information(this, "Reset Password Failed", "Failed");
 }
 
 ForgotPass::~ForgotPass()

@@ -1,8 +1,28 @@
 <RCC>
-  <qresource prefix="LIBPRO">
-    <file>usermenu.jpg</file>
-    <file>menu.jpg</file>
-    <file>icon.png</file>
-    <file>loginbutton.png</file>
-  </qresource>
+    <qresource prefix="/LIBPRO">
+        <file>cart.png</file>
+        <file>icon.png</file>
+        <file>search_icon.png</file>
+        <file>hd-white-wallpaper-11.jpg</file>
+        <file>add.ico</file>
+        <file>back.ico</file>
+        <file>borrow.ico</file>
+        <file>LIBPRO.ico</file>
+        <file>remove.ico</file>
+        <file>search.ico</file>
+        <file>usermenu.jpg</file>
+        <file>1.ico</file>
+        <file>bg.jpg</file>
+        <file>1.jpg</file>
+        <file>splashscreen.jpg</file>
+        <file>reload.ico</file>
+        <file>ss1.jpg</file>
+        <file>ss2.jpg</file>
+        <file>18944704_1220910811353723_1709384595_n.png</file>
+        <file>18946886_1220910834687054_1896337018_o.jpg</file>
+        <file>19021356_1220910818020389_883539199_n.png</file>
+        <file>phong-cach-ombre-la-gi_8(2).jpg</file>
+        <file>1600x900-1387396-triangle.jpg</file>
+        <file>pattern-5.png</file>
+    </qresource>
 </RCC>
